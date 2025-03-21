@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { registerUser } from "../../Services/apiservice"; // Import API đăng ký
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -9,7 +10,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false); // Thêm state loading
-
+    const navigate = useNavigate(); // Dùng để chuyển hướng sau khi đăng ký
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
@@ -25,6 +26,7 @@ const Register = () => {
       setEmail("");
       setPassword("");
       setConfirmPassword("");
+      navigate("/login");
     } catch (error) {
       alert(error.message);
     } finally {
