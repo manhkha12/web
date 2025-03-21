@@ -1,0 +1,29 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+@media (max-width: 576px) {
+
+    .d-lg {
+        display: none;
+    }
+
+    .d-sm {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
+
+.fs {
+    font-size: 13px;
+}
+
+.svg {
+    margin-top: 10px;
+}
+
+.img-rating {
+    width: 15px;
+}
