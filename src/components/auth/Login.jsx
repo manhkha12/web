@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../../Services/apiservice"; // Import API đăng nhập
 import "./login.css";
+import Header from "../Header/Header";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +20,7 @@ const Login = () => {
       if (user) {
         alert("Đăng nhập thành công!");
         localStorage.setItem("user", JSON.stringify(user)); // Lưu user vào localStorage
-        navigate(user.role === "admin" ? "/admin-dashboard" : "/"); // Điều hướng
+        navigate(user.role === "admin" ? "/admin" : "/"); // Điều hướng
       } else {
         alert("Sai email hoặc mật khẩu!");
       }
@@ -31,7 +32,8 @@ const Login = () => {
   };
 
   return (
-    
+    <div className="main">
+      <Header />
     <div className="login-container">
       <div className="login-box">
         <h2 className="login-title">Đăng nhập</h2>
@@ -82,6 +84,7 @@ const Login = () => {
           Chưa có tài khoản? <Link to="/register">Đăng ký ngay</Link>
         </p>
       </div>
+    </div>
     </div>
   );
 };

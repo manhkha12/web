@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Định dạng layout tổng thể */
+.admin-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f5f7;
+  }
+  
+  /* Sidebar (Thanh điều hướng) */
+  .sidebar {
+    width: 250px;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Danh sách menu */
+  .sidebar nav {
+    flex: 1;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 25px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: #4a5568;
+  }
+  
+  .sidebar a.active {
+    background-color: #1a202c;
+  }
+  
+  /* Nội dung chính */
+  .admin-content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-button:hover {
+    background-color: #45a049;
+  }
