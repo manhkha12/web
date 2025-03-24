@@ -40,8 +40,10 @@ const Books = () => {
                  
     
                   <td>
+                  <Link to={`/admin/edit/${item.id}`}>
                     <button className="btn btn-primary btn-sm mx-1">Sửa</button>
-                    <button className="btn btn-danger btn-sm">Xóa</button>
+                  </Link>
+                    
                   </td>
                 </tr>
               ))

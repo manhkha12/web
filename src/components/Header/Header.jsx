@@ -2,10 +2,32 @@ import React from "react";
 import "./Header.css";
 import Search from "./Search";
 import { SearchResultsList } from "./SearchResultsList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
+
 function Header({}) {
   const [results, setResults] = useState([]);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (storedUser) {
+      setUser(storedUser);
+    }
+
+    const handleUserUpdate = () => {
+      const updatedUser = JSON.parse(localStorage.getItem("user"));
+      setUser(updatedUser);
+    };
+
+    // Lắng nghe sự kiện userUpdated để cập nhật state user
+    window.addEventListener("userUpdated", handleUserUpdate);
+
+    return () => {
+      window.removeEventListener("userUpdated", handleUserUpdate);
+    };
+  }, []);
 
   return (
     <header className=" p-2 d-flex">
@@ -83,7 +105,7 @@ function Header({}) {
             />
             Trang chủ
           </a>
-          <Link to="/login" className="Login">
+          {/* <Link to="/login" className="Login">
             <img
               className="mx-1"
               style={{ width: "20px" }}
@@ -91,7 +113,38 @@ function Header({}) {
               alt=""
             />
             Đăng nhập 
-            </Link> {/* Điều hướng đúng */}
+            </Link>  */}
+          {user ? (
+            <div className="user-info">
+              <img
+                className="mx-1"
+                style={{ width: "20px" }}
+                src="/user-svgrepo-com.svg"
+                alt=""
+              />
+
+              {user.username}
+              <button
+                onClick={() => {
+                  localStorage.removeItem("user"); // Xóa user khi logout
+                  setUser(null);
+                  window.dispatchEvent(new Event("userUpdated"));
+                }}
+              >
+                <img src="logout-svgrepo-com.svg" style={{ width: "20px" }} />
+              </button>
+            </div>
+          ) : (
+            <Link to="/login" className="Login">
+              <img
+                className="mx-1"
+                style={{ width: "20px" }}
+                src="/user-svgrepo-com.svg"
+                alt=""
+              />
+              Đăng nhập
+            </Link>
+          )}
           <a href="#" className="cart border-0 border-start mx-5">
             <img
               src="https://salt.tikicdn.com/ts/upload/51/e2/92/8ca7e2cc5ede8c09e34d1beb50267f4f.png"

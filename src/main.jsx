@@ -31,6 +31,7 @@ const router = createBrowserRouter([
     children:[
       { path: "", element: <Books /> }, // Mặc định hiển thị danh sách sách
       { path: "/admin/add_book", element: <AdminContent /> },
+      {path :"/admin/edit/:id",element :<AdminContent/>}
     ]
     
   },

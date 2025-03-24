@@ -15,6 +15,8 @@ const fetchBooks = () => {
 export default fetchBooks;
  
 const addBook = async (bookData) => {
+    console.log(">>>>>", bookData);
+    
     try {
         const response = await fetch("http://localhost:5000/books", {
             method: "POST",
@@ -34,6 +36,42 @@ const addBook = async (bookData) => {
     }
 };
 
+const updateBook = async (id, updatedData) => {
+    try {
+        const response = await fetch(`http://localhost:5000/books/${id}`, {
+            method: "PUT", 
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(updatedData),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(`Lỗi ${response.status}: ${errorData.message || "Không thể cập nhật sách!"}`);
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error("Lỗi khi cập nhật sách:", error);
+        throw error;
+    }
+};
+
+const deleteBook = async (bookId) => {
+    try {
+        const response = await fetch(`http://localhost:5000/books/${bookId}`, {
+            method: "DELETE",
+        });
+
+        if (!response.ok) {
+            throw new Error(`Lỗi ${response.status}: Không thể xoá sản phẩm!`);
+        }
+
+        return { success: true };
+    } catch (error) {
+        console.error("Lỗi khi xoá sản phẩm:", error);
+        throw error;
+    }
+};
 
 const API_URL = "http://localhost:5000/users";
 // Đăng ký user mới
@@ -75,4 +113,4 @@ const loginUser = async (email, password) => {
     return user; // Trả về thông tin user
 };
 
-export {fetchBooks,registerUser ,loginUser ,addBook};
+export {fetchBooks,registerUser ,loginUser ,addBook,updateBook,deleteBook};

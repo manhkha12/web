@@ -20,6 +20,8 @@ const Login = () => {
       if (user) {
         alert("Đăng nhập thành công!");
         localStorage.setItem("user", JSON.stringify(user)); // Lưu user vào localStorage
+        // Gửi sự kiện để cập nhật user trong Header
+        window.dispatchEvent(new Event("userUpdated"));
         navigate(user.role === "admin" ? "/admin" : "/"); // Điều hướng
       } else {
         alert("Sai email hoặc mật khẩu!");
