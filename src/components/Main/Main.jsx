@@ -1,10 +1,59 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { fetchBooks } from "../../Services/apiservice";
+import { fetchBooks, fetchCategories } from "../../Services/apiservice";
 import Header from "../Header/Header";
 
 const Main = () => {
-  let products = fetchBooks();
+  // State cho sách
+  const [products, setProducts] = useState([]);
+  // State cho danh mục từ API
+  const [categories, setCategories] = useState([]);
+  // State cho danh mục được chọn (lưu id)
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  // Tải danh mục khi component mount
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const data = await fetchCategories();
+        setCategories(data);
+      } catch (error) {
+        console.error("Lỗi khi lấy danh mục:", error);
+      }
+    };
+    loadCategories();
+  }, []);
+
+  // Hàm tải sách, nếu có danh mục được chọn, thêm query parameter để lọc
+  const loadBooks = async () => {
+    try {
+      const response = await fetch("http://localhost:5000/books");
+      const data = await response.json();
+      if (selectedCategory) {
+        // Lọc sách trên client theo trường categories.id
+        const filtered = data.filter(
+          (book) => book.categories && book.categories.id === selectedCategory
+        );
+        setProducts(filtered);
+      } else {
+        setProducts(data);
+      }
+    } catch (error) {
+      console.error("Lỗi khi lấy sách:", error);
+    }
+  };
+
+  // Tải sách mỗi khi selectedCategory thay đổi
+  useEffect(() => {
+    loadBooks();
+  }, [selectedCategory]);
+
+  // Xử lý khi ấn vào danh mục: cập nhật selectedCategory
+  const handleCategoryClick = (e, catId) => {
+    e.preventDefault(); // Ngăn trang reload
+    setSelectedCategory(catId);
+  };
+
 
   return (
     <main>
@@ -140,26 +189,17 @@ const Main = () => {
               <div className="border-0 px-3 ">
                 <h6 style={{ fontSize: "15px" }}>Danh Mục Sản Phẩm</h6>
                 <ul className="list-unstyled fs">
-                  <li>
-                    <a className="text-dark text-decoration-none" href="#">
-                      English Books
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-dark text-decoration-none" href="#">
-                      Sách tiếng Việt
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-dark text-decoration-none" href="#">
-                      Văn phòng phẩm
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-dark text-decoration-none" href="#">
-                      Quà lưu niệm
-                    </a>
-                  </li>
+                  {categories.length > 0 ? (
+                    categories.map((category) => (
+                      <li key={category.id}>
+                        <a className="text-dark text-decoration-none" href="#"
+                          onClick={(e) => handleCategoryClick(e, category.id)}> {category.name}
+                        </a>
+                      </li>
+                    ))
+                  ) : (
+                    <li>Không có danh mục</li>
+                  )}
                 </ul>
                 <hr />
               </div>
