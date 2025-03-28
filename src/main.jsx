@@ -10,34 +10,38 @@ import Login from "./components/auth/Login.jsx";
 import Register from './components/auth/Register.jsx'
 import Admin from './components/AdminPage/Product.jsx'
 import AdminContent from './components/AdminPage/AdminContent.jsx'
+import Category from "./components/AdminPage/Category.jsx";
 
 import Books from './components/AdminPage/Books.jsx'
 
 const router = createBrowserRouter([
-
   {
     path: "/",
-    element: <App />
+    element: <App />,
   },
   {
     path: "/book/:id",
-    element: <BookDetail />
+    element: <BookDetail />,
   },
-  { path: "/login", element: <Login /> },
-  { path: "/register", element: <Register /> },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
   {
     path: "/admin",
     element: <Admin />, // Admin là layout chính
-    children:[
+    children: [
       { path: "", element: <Books /> }, // Mặc định hiển thị danh sách sách
       { path: "/admin/add_book", element: <AdminContent /> },
-      {path :"/admin/edit/:id",element :<AdminContent/>}
-    ]
-    
+      { path: "/admin/edit/:id", element: <AdminContent /> },
+      { path: "category", element: <Category /> },
+    ],
   },
-  
-  
-])
+]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />

@@ -1,13 +1,21 @@
-import { useState ,useEffect } from "react";
-import { addBook, updateBook,deleteBook  } from "../../Services/apiservice";
-import { useNavigate ,useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import {
+  addBook,
+  updateBook,
+  deleteBook,
+  fetchCategories,
+} from "../../Services/apiservice";
+import { useNavigate, useParams } from "react-router-dom";
 import "./AdminContent.css";
+
 const AdminContent = () => {
   const navigate = useNavigate();
   const { id } = useParams();
+
   // Hàm tạo ID ngẫu nhiên
   const generateId = () => crypto.randomUUID();
 
+  // State cho thông tin sản phẩm
   const [formData, setFormData] = useState({
     name: "",
     authors: [{ id: "", name: "", slug: "" }],
@@ -22,44 +30,81 @@ const AdminContent = () => {
     specifications: [{ name: "Thông tin chung", attributes: [] }],
   });
 
+  // State chứa danh sách danh mục cho dropdown
+  const [categories, setCategories] = useState([]);
 
-   // Nếu có id, gọi API để lấy thông tin sách cần sửa
-   useEffect(() => {
+  // Nếu có id (chỉnh sửa) thì tải dữ liệu sách
+  useEffect(() => {
     if (id) {
       fetch(`http://localhost:5000/books/${id}`)
-        .then(response => response.json())
-        .then(data => {
+        .then((response) => response.json())
+        .then((data) => {
           if (data) {
             setFormData({
               name: data.name || "",
-              authors: data.authors?.length > 0 ? data.authors : [{ id: "", name: "", slug: "" }],
-              categories: data.categories || { id: "", name: "", is_leaf: false },
+              authors:
+                data.authors?.length > 0
+                  ? data.authors
+                  : [{ id: "", name: "", slug: "" }],
+              categories: data.categories || {
+                id: "",
+                name: "",
+                is_leaf: false,
+              },
               current_seller: data.current_seller || { id: 1, price: "" },
               description: data.description || "",
-              images: data.images?.length > 0 ? data.images : [{ base_url: "" }],
+              images:
+                data.images?.length > 0 ? data.images : [{ base_url: "" }],
               list_price: data.list_price || "",
               original_price: data.original_price || "",
               rating_average: data.rating_average || "",
               short_description: data.short_description || "",
-              specifications: data.specifications?.length > 0 ? data.specifications : [{ name: "Thông tin chung", attributes: [] }],
+              specifications:
+                data.specifications?.length > 0
+                  ? data.specifications
+                  : [{ name: "Thông tin chung", attributes: [] }],
             });
           }
         })
-        .catch(error => console.error("Lỗi khi lấy dữ liệu:", error));
+        .catch((error) => console.error("Lỗi khi lấy dữ liệu:", error));
     }
   }, [id]);
 
-  // Hàm xử lý nhập liệu
+  // Tải danh mục từ API khi component mount
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const data = await fetchCategories();
+        setCategories(data);
+      } catch (error) {
+        console.error("Lỗi khi lấy danh mục:", error);
+      }
+    };
+    loadCategories();
+  }, []);
+
+  // Hàm xử lý thay đổi cho các ô input
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Hàm xử lý thêm sách
+  // Xử lý thay đổi dropdown cho danh mục
+  const handleCategoryChange = (e) => {
+    const selectedId = e.target.value;
+    const selectedCategory = categories.find(
+      (cat) => String(cat.id) === selectedId
+    );
+    setFormData({
+      ...formData,
+      categories: selectedCategory || { id: "", name: "", is_leaf: false },
+    });
+  };
+
+  // Hàm submit form (thêm mới hoặc cập nhật sách)
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Tạo ID tự động nếu bị null
     const updatedData = {
       ...formData,
       authors: formData.authors.map((author) => ({
@@ -73,20 +118,20 @@ const AdminContent = () => {
     };
 
     try {
-        if (id) {
-            await updateBook(id, updatedData);
-            alert("Cập nhật sản phẩm thành công!");
-          } else {
-            await addBook(updatedData);
-            alert("Thêm sản phẩm thành công!");
-          }
-          navigate("/admin");
-        } catch (error) {
-          console.error("Lỗi khi xử lý sản phẩm:", error);
-        }
+      if (id) {
+        await updateBook(id, updatedData);
+        alert("Cập nhật sản phẩm thành công!");
+      } else {
+        await addBook(updatedData);
+        alert("Thêm sản phẩm thành công!");
+      }
+      navigate("/admin");
+    } catch (error) {
+      console.error("Lỗi khi xử lý sản phẩm:", error);
+    }
   };
 
-
+  // Hàm xử lý xóa sản phẩm
   const handleDelete = async () => {
     if (window.confirm("Bạn có chắc chắn muốn xoá sản phẩm này không?")) {
       try {
@@ -134,7 +179,7 @@ const AdminContent = () => {
           />
         </div>
 
-        {/* Giá */}
+        {/* Giá bán */}
         <div className="mb-3">
           <label className="form-label">Giá bán</label>
           <input
@@ -168,60 +213,25 @@ const AdminContent = () => {
           />
         </div>
 
-        {/* Đánh giá trung bình
-                <div className="mb-3">
-                    <label className="form-label">Đánh giá trung bình</label>
-                    <input
-                        type="number"
-                        step="0.1"
-                        name="rating_average"
-                        className="form-control"
-                        value={formData.rating_average}
-                        onChange={handleChange}
-                    />
-                </div> */}
-
-        {/* Mô tả ngắn
-                <div className="mb-3">
-                    <label className="form-label">Mô tả ngắn</label>
-                    <textarea
-                        name="short_description"
-                        className="form-control"
-                        value={formData.short_description}
-                        onChange={handleChange}
-                    ></textarea>
-                </div> */}
-
-        {/* Mô tả chi tiết
-                <div className="mb-3">
-                    <label className="form-label">Mô tả chi tiết</label>
-                    <textarea
-                        name="description"
-                        className="form-control"
-                        value={formData.description}
-                        onChange={handleChange}
-                    ></textarea>
-                </div> */}
-
-        {/* Danh mục */}
+        {/* Dropdown chọn danh mục */}
         <div className="mb-3">
           <label className="form-label">Danh mục</label>
-          <input
-            type="text"
-            name="categories.name"
+          <select
             className="form-control"
-            value={formData.categories.name}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                categories: { ...formData.categories, name: e.target.value },
-              })
-            }
+            value={formData.categories.id}
+            onChange={handleCategoryChange}
             required
-          />
+          >
+            <option value="">-- Chọn danh mục --</option>
+            {categories.map((cat) => (
+              <option key={cat.id} value={cat.id}>
+                {cat.name}
+              </option>
+            ))}
+          </select>
         </div>
 
-        {/* Ảnh */}
+        {/* URL ảnh */}
         <div className="mb-3">
           <label className="form-label">URL Ảnh</label>
           <input
@@ -241,10 +251,14 @@ const AdminContent = () => {
 
         {/* Nút submit */}
         <button type="submit" className="btn btn-primary">
-        {id ? "Cập nhật sản phẩm" : "Thêm sản phẩm"}
+          {id ? "Cập nhật sản phẩm" : "Thêm sản phẩm"}
         </button>
         {id && (
-          <button type="button" className="btn btn-danger mx-3" onClick={handleDelete}>
+          <button
+            type="button"
+            className="btn btn-danger mx-3"
+            onClick={handleDelete}
+          >
             Xóa sản phẩm
           </button>
         )}

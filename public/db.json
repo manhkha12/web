@@ -24,6 +24,7 @@
   ],
   "books": [
     {
+      "name": "Đời Ngắn Đừng Ngủ Dài (Tái Bản)",
       "authors": [
         {
           "id": 13992,
@@ -31,11 +32,9 @@
           "slug": "robin-sharma"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 1,
@@ -63,12 +62,7 @@
         }
       ],
       "list_price": 75000,
-      "name": "Đời Ngắn Đừng Ngủ Dài (Tái Bản)",
       "original_price": 75000,
-      "quantity_sold": {
-        "text": "Đã bán 1000+",
-        "value": 42844
-      },
       "rating_average": 4.8,
       "short_description": "“Mọi lựa chọn đều giá trị. Mọi bước đi đều quan trọng. Cuộc sống vẫn diễn ra theo cách của nó, không phải theo cách của ta. Hãy kiên nhẫn. Tin tưởng. Hãy giống như người thợ cắt đá, đều đặn từng nhịp,...",
       "specifications": [
@@ -115,9 +109,8 @@
         }
       ],
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 53660,
@@ -188,6 +181,7 @@
       "id": "7"
     },
     {
+      "name": "Rừng Nauy (Tái Bản)",
       "authors": [
         {
           "id": 363,
@@ -195,11 +189,9 @@
           "slug": "haruki-murakami"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 53660,
@@ -227,12 +219,7 @@
         }
       ],
       "list_price": 150000,
-      "name": "Rừng Nauy (Tái Bản)",
       "original_price": 150000,
-      "quantity_sold": {
-        "text": "Đã bán 48",
-        "value": 48
-      },
       "rating_average": 4.8,
       "short_description": "Câu chuyện bắt đầu từ một chuyến bay trong ngày mưa ảm đạm, một người đàn ông 37 tuổi chợt nghe thấy bài hát gắn liền với hình ảnh người yêu cũ, thế là quá khứ ùa về xâm chiếm thực tại. Mười tám năm t...",
       "specifications": [
@@ -280,6 +267,7 @@
       "id": "8"
     },
     {
+      "name": "Nhà Giả Kim (Tái Bản 2020)",
       "authors": [
         {
           "id": 9173,
@@ -287,11 +275,9 @@
           "slug": "paulo-coelho"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 53660,
@@ -319,12 +305,7 @@
         }
       ],
       "list_price": 79000,
-      "name": "Nhà Giả Kim (Tái Bản 2020)",
       "original_price": 79000,
-      "quantity_sold": {
-        "text": "Đã bán 1000+",
-        "value": 2269
-      },
       "rating_average": 5,
       "short_description": "Sơ lược về tác phẩmTất cả những trải nghiệm trong chuyến phiêu du theo đuổi vận mệnh của mình đã giúp Santiago thấu hiểu được ý nghĩa sâu xa nhất của hạnh phúc, hòa hợp với vũ trụ và con người.Tiểu ...",
       "specifications": [
@@ -367,6 +348,7 @@
       "id": "9"
     },
     {
+      "name": "Think And Grow Rich - 13 Nguyên Tắc Nghĩ Giàu, Làm Giàu (Tái Bản)",
       "authors": [
         {
           "id": 7142,
@@ -374,11 +356,9 @@
           "slug": "napoleon-hill"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 385,
-        "name": "Sách kỹ năng làm việc",
-        "is_leaf": true
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 1,
@@ -426,12 +406,7 @@
         }
       ],
       "list_price": 110000,
-      "name": "Think And Grow Rich - 13 Nguyên Tắc Nghĩ Giàu, Làm Giàu (Tái Bản)",
       "original_price": 110000,
-      "quantity_sold": {
-        "text": "Đã bán 1000+",
-        "value": 9630
-      },
       "rating_average": 4.8,
       "short_description": "Cuốn sách sẽ giúp bạn trở nên giàu có, làm giàu cho cuộc sống của bạn trên tất cả các phương diện của cuộc sống chứ không chỉ về tài chính và vật chất.Think and grow rich – 13 nguyên tắc nghĩ giàu, l...",
       "specifications": [
@@ -474,6 +449,7 @@
       "id": "10"
     },
     {
+      "name": "Rèn Luyện Tư Duy Phản Biện",
       "authors": [
         {
           "id": 638625,
@@ -481,11 +457,9 @@
           "slug": "albert-rutherford"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 53660,
@@ -523,12 +497,7 @@
         }
       ],
       "list_price": 99000,
-      "name": "Rèn Luyện Tư Duy Phản Biện",
       "original_price": 99000,
-      "quantity_sold": {
-        "text": "Đã bán 1000+",
-        "value": 2105
-      },
       "rating_average": 4.8,
       "short_description": "Như bạn có thể thấy, chìa khóa để trở thành một người có tư duy phản biện tốt chính là sự tự nhận thức. Bạn cần phải đánh giá trung thực những điều trước đây bạn nghĩ là đúng, cũng như quá trình suy n...",
       "specifications": [
@@ -571,6 +540,7 @@
       "id": "12"
     },
     {
+      "name": "Những Đêm Không Ngủ, Những Ngày Chậm Trôi",
       "authors": [
         {
           "id": 4213891,
@@ -578,11 +548,9 @@
           "slug": "a-crazy-mind-team"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 53660,
@@ -610,12 +578,7 @@
         }
       ],
       "list_price": 86000,
-      "name": "Những Đêm Không Ngủ, Những Ngày Chậm Trôi",
       "original_price": 86000,
-      "quantity_sold": {
-        "text": "Đã bán 567",
-        "value": 567
-      },
       "rating_average": 4.8,
       "short_description": "NHỮNG ĐÊM KHÔNG NGỦ NHỮNG NGÀY CHẬM TRÔI - A CRAZY MIND“Những đêm không ngủ, những ngày chậm trôi” đại diện cho một hành tinh mới - nơi nỗi đau tinh thần được đưa ra ánh sáng và chữa lành.Cuốn sách ...",
       "specifications": [
@@ -658,11 +621,17 @@
       "id": "13"
     },
     {
-      "book_cover": null,
+      "name": "NẾU BIẾT TRĂM NĂM LÀ HỮU HẠN - Bìa cứng - ấn bản kỷ niệm lần in thứ 20 – Phạm Lữ Ân",
+      "authors": [
+        {
+          "id": "43e59619-2489-484e-9d82-5756fcddb012",
+          "name": "VARIOS AUTORES",
+          "slug": ""
+        }
+      ],
       "categories": {
-        "id": 845,
-        "name": "Truyện ngắn - Tản văn - Tạp Văn",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 9988,
@@ -730,12 +699,7 @@
         }
       ],
       "list_price": 224500,
-      "name": "NẾU BIẾT TRĂM NĂM LÀ HỮU HẠN - Bìa cứng - ấn bản kỷ niệm lần in thứ 20 – Phạm Lữ Ân",
       "original_price": 224500,
-      "quantity_sold": {
-        "text": "Đã bán 8",
-        "value": 8
-      },
       "rating_average": 5,
       "short_description": "Đây là sách dành cho tuổi học trò - tuổi ô mai - tuổi trái tim lần đầu biết rung độ ở tuổi chập choạng ấy, các em rất cần liều thuốc cho tâm hồn: để biết bao dung, nhân ái, yêu người và yêu mì để bi...",
       "specifications": [
@@ -758,6 +722,7 @@
       "id": "14"
     },
     {
+      "name": "THIÊN HOÀNG MINH TRỊ - BÌA MỀM",
       "authors": [
         {
           "id": 572221,
@@ -765,11 +730,9 @@
           "slug": "donald-keene"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 842,
-        "name": "Tác phẩm kinh điển",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 281062,
@@ -837,9 +800,8 @@
         }
       ],
       "list_price": 300000,
-      "name": "THIÊN HOÀNG MINH TRỊ - BÌA MỀM",
       "original_price": 300000,
-      "rating_average": 0,
+      "rating_average": "",
       "short_description": "Triều đại Minh Trị là giai đoạn khai sinh ra nước Nhật mới, chuyển từ quốc gia phong kiến lạc hậu sang một xã hội công nghiệp lập hiến hiện đại, tạo nên một cuộc duy tân thần kì mà cho đến nay vẫn là ...",
       "specifications": [
         {
@@ -881,11 +843,17 @@
       "id": "15"
     },
     {
-      "book_cover": null,
+      "name": "ẤN BẢN BÌA DA PU CAO CẤP VÀ GIỚI HẠN “TỘI ÁC VÀ HÌNH PHẠT” CỦA DOSTOYEVSKY – S300 – NHÃ NAM ",
+      "authors": [
+        {
+          "id": "390b3b4e-8b6f-480d-8b8f-31213ddd0939",
+          "name": "Frances Hodgson Burnett",
+          "slug": ""
+        }
+      ],
       "categories": {
-        "id": 842,
-        "name": "Tác phẩm kinh điển",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 223928,
@@ -1033,12 +1001,7 @@
         }
       ],
       "list_price": 1700000,
-      "name": "ẤN BẢN BÌA DA PU CAO CẤP VÀ GIỚI HẠN “TỘI ÁC VÀ HÌNH PHẠT” CỦA DOSTOYEVSKY – S300 – NHÃ NAM ",
       "original_price": 1700000,
-      "quantity_sold": {
-        "text": "Đã bán 18",
-        "value": 18
-      },
       "rating_average": 5,
       "short_description": "Các bạn thân mến,Ở Việt Nam, trong số các tác phẩm của Dostoyevsky, “Tội ác và hình phạt” có lẽ là cuốn tiếp cận được với đông đảo công chúng nhất. Xuất bản lần đầu ở Nga vào năm 1886, “Tội ác và hìn...",
       "specifications": [
@@ -1061,6 +1024,7 @@
       "id": "16"
     },
     {
+      "name": "Anh Em Nhà Karamazov (Bìa Cứng)",
       "authors": [
         {
           "id": 12018,
@@ -1068,11 +1032,9 @@
           "slug": "fyodor-dostoyevsky"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 842,
-        "name": "Tác phẩm kinh điển",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 1,
@@ -1100,12 +1062,7 @@
         }
       ],
       "list_price": 400000,
-      "name": "Anh Em Nhà Karamazov (Bìa Cứng)",
       "original_price": 400000,
-      "quantity_sold": {
-        "text": "Đã bán 384",
-        "value": 384
-      },
       "rating_average": 4.8,
       "short_description": "\"“Dos đã cho tôi nhiều hơn bất cứ nhà tư tưởng nào của nhân loại.” – A. Einstein“Anh em nhà Karamazov là cuốn tiểu thuyết vĩ đại nhất từng được viết nên.” – Sigmund Freud“Một con người đơn độc mà vi...",
       "specifications": [
@@ -1153,6 +1110,7 @@
       "id": "17"
     },
     {
+      "name": "Tam Quốc Diễn Nghĩa (Trọn Bộ 13 Tập) - Tái Bản 2020",
       "authors": [
         {
           "id": 10480,
@@ -1160,11 +1118,9 @@
           "slug": "la-quan-trung"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 842,
-        "name": "Tác phẩm kinh điển",
-        "is_leaf": true
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 229927,
@@ -1192,12 +1148,7 @@
         }
       ],
       "list_price": 390000,
-      "name": "Tam Quốc Diễn Nghĩa (Trọn Bộ 13 Tập) - Tái Bản 2020",
       "original_price": 390000,
-      "quantity_sold": {
-        "text": "Đã bán 33",
-        "value": 33
-      },
       "rating_average": 3.5,
       "short_description": "####Tam Quốc diễn nghĩa là pho tiểu thuyết lịch sử ưu tú của nền văn học cổ Trung Quốc được độc giả khắp thế giới yêu thích, say mê. Ở nước ta trước đây, Tam Quốc diễn nghĩa đã được dịch ra nhiều bản,...",
       "specifications": [
@@ -1235,6 +1186,7 @@
       "id": "18"
     },
     {
+      "name": "Sách: Cho Đi Và Nhận Lại - Nghệ Thuật Xây Dựng Mối Quan Hệ Nơi Công Sở ",
       "authors": [
         {
           "id": 4415443,
@@ -1242,11 +1194,9 @@
           "slug": "instant-research-institude"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 871,
-        "name": "Sách tư duy - Kỹ năng sống",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 36846,
@@ -1364,12 +1314,7 @@
         }
       ],
       "list_price": 80000,
-      "name": "Sách: Cho Đi Và Nhận Lại - Nghệ Thuật Xây Dựng Mối Quan Hệ Nơi Công Sở ",
       "original_price": 80000,
-      "quantity_sold": {
-        "text": "Đã bán 11",
-        "value": 11
-      },
       "rating_average": 4.5,
       "short_description": "Mạng lưới quan hệ cá nhân phong phú là trang bị cần thiết của các cao thủ chốn công sở!  Từ xưa đến nay, dường như chưa từng có tiền lệ một đội quân chỉ dựa vào sức mình mà có thể thắng trận. Trong ...",
       "specifications": [
@@ -1407,6 +1352,7 @@
       "id": "19"
     },
     {
+      "name": "Tư Duy Hệ Thống Trong Công Việc",
       "authors": [
         {
           "id": 163121,
@@ -1414,11 +1360,9 @@
           "slug": "steven-schuster"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 316,
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 53660,
@@ -1456,12 +1400,7 @@
         }
       ],
       "list_price": 89000,
-      "name": "Tư Duy Hệ Thống Trong Công Việc",
       "original_price": 89000,
-      "quantity_sold": {
-        "text": "Đã bán 182",
-        "value": 182
-      },
       "rating_average": 4.5,
       "short_description": "TƯ DUY HỆ THỐNG TRONG CÔNG VIỆC Khi đối mặt với những vấn đề phức tạp, chúng ta không thể giải quyết chúng bằng kiểu suy nghĩ lối mòn, nước đến chân mới nhảy, mù quáng đâm đầu vào sự vụ Nếu bạn muốn ...",
       "specifications": [
@@ -1509,6 +1448,7 @@
       "id": "20"
     },
     {
+      "name": "TƯ DUY NGƯỢC - Nguyễn Anh Dũng",
       "authors": [
         {
           "id": 114261,
@@ -1516,11 +1456,9 @@
           "slug": "nguyen-anh-dung"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 871,
-        "name": "Sách tư duy - Kỹ năng sống",
-        "is_leaf": true
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 10684,
@@ -1598,12 +1536,7 @@
         }
       ],
       "list_price": 99000,
-      "name": "TƯ DUY NGƯỢC - Nguyễn Anh Dũng",
       "original_price": 99000,
-      "quantity_sold": {
-        "text": "Đã bán 54",
-        "value": 54
-      },
       "rating_average": 4.6,
       "short_description": "TƯ DUY NGƯỢC Tác giả Nguyễn Anh DũngChúng ta thực sự có hạnh phúc không? Chúng ta có đang sống cuộc đời mình không? Chúng ta có dám dũng cảm chiến thắng mọi khuôn mẫu, định kiến, đi ngược đám đông đ...",
       "specifications": [
@@ -1646,6 +1579,7 @@
       "id": "21"
     },
     {
+      "name": "English Grammar in Use Book w Ans",
       "authors": [
         {
           "id": 8318,
@@ -1653,11 +1587,9 @@
           "slug": "raymond-murphy"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 320,
-        "name": "English Books",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 53660,
@@ -1915,12 +1847,7 @@
         }
       ],
       "list_price": 178000,
-      "name": "English Grammar in Use Book w Ans",
       "original_price": 178000,
-      "quantity_sold": {
-        "text": "Đã bán 1000+",
-        "value": 9476
-      },
       "rating_average": 5,
       "short_description": "The world's best-selling grammar series for learners of English. English Grammar in Use Fourth edition is an updated version of the world's best-selling grammar title. It has a fresh, appealing new de...",
       "specifications": [
@@ -1943,6 +1870,7 @@
       "id": "22"
     },
     {
+      "name": "English Vocabulary in Use: Vocabulary Reference and Practice (CD-ROM)",
       "authors": [
         {
           "id": 7807,
@@ -1950,11 +1878,9 @@
           "slug": "michael-mccarthy"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 320,
-        "name": "English Books",
-        "is_leaf": false
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 53660,
@@ -1982,12 +1908,7 @@
         }
       ],
       "list_price": 193000,
-      "name": "English Vocabulary in Use: Vocabulary Reference and Practice (CD-ROM)",
       "original_price": 193000,
-      "quantity_sold": {
-        "text": "Đã bán 622",
-        "value": 622
-      },
       "rating_average": 5,
       "short_description": "The perfect choice for advanced-level students wanting to build their vocabulary skills. English Vocabulary in Use: Advanced includes over 2,000 new words and expressions which are presented and pract...",
       "specifications": [
@@ -2015,6 +1936,7 @@
       "id": "23"
     },
     {
+      "name": "Ngữ pháp tiếng Anh thường dùng (trình độ trung cấp) – English Grammar in Use -5th edition",
       "authors": [
         {
           "id": 112340,
@@ -2022,11 +1944,9 @@
           "slug": "my-duy"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 14896,
-        "name": "Grammar, vocabulary & skills",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 128392,
@@ -2064,12 +1984,7 @@
         }
       ],
       "list_price": 180000,
-      "name": "Ngữ pháp tiếng Anh thường dùng (trình độ trung cấp) – English Grammar in Use -5th edition",
       "original_price": 180000,
-      "quantity_sold": {
-        "text": "Đã bán 23",
-        "value": 23
-      },
       "rating_average": 4.3,
       "short_description": "Ngữ pháp tiếng Anh thường dùng (trình độ trung cấp) – English Grammar in UseNếu phải chọn một cuốn sách ngữ pháp để học tiếng Anh 100% người học tiếng Anh sẽ khuyên bạn chọn English Grammar in Use.Đ...",
       "specifications": [
@@ -2112,6 +2027,7 @@
       "id": "24"
     },
     {
+      "name": "Oxford Word Skills: Elementary: Student's Pack",
       "authors": [
         {
           "id": 843855,
@@ -2119,11 +2035,9 @@
           "slug": "varios-autores"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 14896,
-        "name": "Grammar, vocabulary & skills",
-        "is_leaf": true
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 53660,
@@ -2151,12 +2065,7 @@
         }
       ],
       "list_price": 297000,
-      "name": "Oxford Word Skills: Elementary: Student's Pack",
       "original_price": 297000,
-      "quantity_sold": {
-        "text": "Đã bán 71",
-        "value": 71
-      },
       "rating_average": 5,
       "short_description": "Oxford Word Skills: Elementary: Student's Pack   The first level in a three-level topic-based vocabulary course to learn and practise the words that learners need to know at each CEFR level, based on...",
       "specifications": [
@@ -2184,6 +2093,7 @@
       "id": "25"
     },
     {
+      "name": "Oxford Word Skills: Intermediate: Student's Pack",
       "authors": [
         {
           "id": 843855,
@@ -2191,11 +2101,9 @@
           "slug": "varios-autores"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 14896,
-        "name": "Grammar, vocabulary & skills",
-        "is_leaf": true
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 53660,
@@ -2283,12 +2191,7 @@
         }
       ],
       "list_price": 297000,
-      "name": "Oxford Word Skills: Intermediate: Student's Pack",
       "original_price": 297000,
-      "quantity_sold": {
-        "text": "Đã bán 50",
-        "value": 50
-      },
       "rating_average": 5,
       "short_description": "Oxford Word Skills: Intermediate: Student's Pack   A three-level topic-based vocabulary course to learn and practise the words that learners need to know at each CEFR level, based on the Oxford 3000T...",
       "specifications": [
@@ -2316,6 +2219,7 @@
       "id": "26"
     },
     {
+      "name": "Truyện đọc tiếng Anh - Wonder",
       "authors": [
         {
           "id": 46343,
@@ -2323,11 +2227,9 @@
           "slug": ""
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 9,
-        "name": "Fiction - Literature",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 53660,
@@ -2355,12 +2257,7 @@
         }
       ],
       "list_price": 147000,
-      "name": "Truyện đọc tiếng Anh - Wonder",
       "original_price": 147000,
-      "quantity_sold": {
-        "text": "Đã bán 469",
-        "value": 469
-      },
       "rating_average": 5,
       "short_description": "Wonder \"My name is August. I won't describe what I look like. Whatever you're thinking, it's probably worse.\" Auggie wants to be an ordinary ten-year-old. He does ordinary things - eating ice cream, ...",
       "specifications": [
@@ -2408,6 +2305,7 @@
       "id": "27"
     },
     {
+      "name": "Truyện đọc tiếng Anh - Wordsworth Editions: The Little Prince",
       "authors": [
         {
           "id": 10081,
@@ -2415,11 +2313,9 @@
           "slug": "antoine-desaint-exupery"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 9,
-        "name": "Fiction - Literature",
-        "is_leaf": false
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 12696,
@@ -2467,12 +2363,7 @@
         }
       ],
       "list_price": 115000,
-      "name": "Truyện đọc tiếng Anh - Wordsworth Editions: The Little Prince",
       "original_price": 115000,
-      "quantity_sold": {
-        "text": "Đã bán 357",
-        "value": 357
-      },
       "rating_average": 4.7,
       "short_description": "The Little Prince The Little Prince is a classic tale of equal appeal to children and adults. On one level it is the story of an airman's discovery, in the desert, of a small boy from another planet ...",
       "specifications": [
@@ -2525,6 +2416,7 @@
       "id": "28"
     },
     {
+      "name": "Truyện đọc tiếng Anh - Aesop's Fables",
       "authors": [
         {
           "id": 5348,
@@ -2532,11 +2424,9 @@
           "slug": "aesop"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 9,
-        "name": "Fiction - Literature",
-        "is_leaf": false
+        "id": "4a3f",
+        "name": "Sách Địa Lý"
       },
       "current_seller": {
         "id": 1231,
@@ -2564,12 +2454,7 @@
         }
       ],
       "list_price": 90000,
-      "name": "Truyện đọc tiếng Anh - Aesop's Fables",
       "original_price": 90000,
-      "quantity_sold": {
-        "text": "Đã bán 13",
-        "value": 13
-      },
       "rating_average": 5,
       "short_description": "Aesop's Fables Aesop's celebrated collection of fables has always been popular with both adults and children. These simple tales embody truths so powerful, the titles of the individual fables - the f...",
       "specifications": [
@@ -2617,6 +2502,7 @@
       "id": "29"
     },
     {
+      "name": "The Secret Garden (Vintage Children's Classics)",
       "authors": [
         {
           "id": 931,
@@ -2624,11 +2510,9 @@
           "slug": "frances-hodgson-burnett"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 9,
-        "name": "Fiction - Literature",
-        "is_leaf": false
+        "id": "8663",
+        "name": "Sách Tiếng Anh"
       },
       "current_seller": {
         "id": 53660,
@@ -2656,12 +2540,7 @@
         }
       ],
       "list_price": 121000,
-      "name": "The Secret Garden (Vintage Children's Classics)",
       "original_price": 121000,
-      "quantity_sold": {
-        "text": "Đã bán 9",
-        "value": 9
-      },
       "rating_average": 5,
       "short_description": "The Secret Garden (Vintage Children's Classics) When Mary Lennox is sent to Misselthwaite Manor to live with her uncle everybody says she is the most disagreeable-looking child ever seen. It is true,...",
       "specifications": [
@@ -2714,6 +2593,7 @@
       "id": "30"
     },
     {
+      "name": "Wordsworth Classics: Gulliver's Travels",
       "authors": [
         {
           "id": 315,
@@ -2721,11 +2601,9 @@
           "slug": "jonathan-swift"
         }
       ],
-      "book_cover": null,
       "categories": {
-        "id": 9,
-        "name": "Fiction - Literature",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 6337,
@@ -2753,12 +2631,7 @@
         }
       ],
       "list_price": 120000,
-      "name": "Wordsworth Classics: Gulliver's Travels",
       "original_price": 120000,
-      "quantity_sold": {
-        "text": "Đã bán 5",
-        "value": 5
-      },
       "rating_average": 5,
       "short_description": "Gulliver's Travels Jonathan Swift's classic satirical narrative was first published in 1726, seven years after Defoe's Robinson Crusoe (one of its few rivals in fame and breadth of appeal). As a paro...",
       "specifications": [
@@ -2811,19 +2684,17 @@
       "id": "31"
     },
     {
-      "id": "26d4",
       "name": "Đời Ngắn Đừng Ngủ Dài (Tái Bảnnnnnnnnnnnnnn)",
       "authors": [
         {
-          "id": "",
+          "id": "70c9e262-6203-4942-94d3-24b6a4254666",
           "name": "Robin Sharma",
           "slug": ""
         }
       ],
       "categories": {
-        "id": "",
-        "name": "Sách tiếng Việt",
-        "is_leaf": false
+        "name": "Sách Tiếng Việt",
+        "id": "d836"
       },
       "current_seller": {
         "id": 1,
@@ -2844,7 +2715,8 @@
           "name": "Thông tin chung",
           "attributes": []
         }
-      ]
+      ],
+      "id": "26d4"
     },
     {
       "id": "d645",
@@ -2917,6 +2789,20 @@
           "attributes": []
         }
       ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "Sách Tiếng Việt",
+      "id": "d836"
+    },
+    {
+      "id": "8663",
+      "name": "Sách Tiếng Anh"
+    },
+    {
+      "id": "4a3f",
+      "name": "Sách Địa Lý"
     }
   ]
 }
