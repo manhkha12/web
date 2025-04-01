@@ -20,6 +20,21 @@
       "email": "manhkha@gmail.com",
       "password": "123456",
       "role": "user"
+    },
+    {
+      "id": "175c",
+      "username": "kkk",
+      "email": "kk@gmail.com",
+      "role": "user",
+      "name": "kkk",
+      "password": "123456"
+    },
+    {
+      "id": "d6eb",
+      "username": "11",
+      "email": "11@gmail.com",
+      "password": "123456",
+      "role": "user"
     }
   ],
   "books": [

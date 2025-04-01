@@ -80,6 +80,55 @@ const deleteBook = async (bookId) => {
 };
 
 const API_URL = "http://localhost:5000/users";
+
+
+
+
+
+
+// Lấy danh sách người dùng
+
+ const fetchUsers = async () => {
+  const response = await fetch(API_URL);
+  const data = await response.json();
+  console.log("Danh sách người dùng:", data);
+  return data;
+};
+
+
+// Thêm người dùng mới
+ const addUser = async (userData) => {
+  const response = await fetch(API_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(userData),
+  });
+  return response.json();
+};
+
+// Cập nhật người dùng
+ const updateUser = async (id, userData) => {
+  const response = await fetch(`${API_URL}/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(userData),
+  });
+  return response.json();
+};
+
+// Xóa người dùng
+const deleteUser = async (id) => {
+  await fetch(`${API_URL}/${id}`, { method: "DELETE" });
+};
+
+
+
+
+
+
+
+
+
 // Đăng ký user mới
 const registerUser = async (userData) => {
   const response = await fetch(API_URL);
@@ -117,7 +166,7 @@ const loginUser = async (email, password) => {
   return user; // Trả về thông tin user
 };
 
-export { fetchBooks, registerUser, loginUser, addBook, updateBook, deleteBook };
+export { fetchBooks, registerUser, loginUser, addBook, updateBook, deleteBook ,fetchUsers, addUser, updateUser, deleteUser};
 
 // Phần category
 // Lấy danh sách danh mục

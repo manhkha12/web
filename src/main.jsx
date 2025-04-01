@@ -8,10 +8,10 @@ import BookDetail from './components/BookDetails/Bookdetail.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from "./components/auth/Login.jsx";
 import Register from './components/auth/Register.jsx'
-import Admin from './components/AdminPage/Product.jsx'
+import Product from './components/AdminPage/Product.jsx'
 import AdminContent from './components/AdminPage/AdminContent.jsx'
 import Category from "./components/AdminPage/Category.jsx";
-
+import Users from './components/AdminPage/Users.jsx'
 import Books from './components/AdminPage/Books.jsx'
 
 const router = createBrowserRouter([
@@ -33,12 +33,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <Admin />, // Admin là layout chính
+    element: <Product />, // Admin là layout chính
     children: [
       { path: "", element: <Books /> }, // Mặc định hiển thị danh sách sách
       { path: "/admin/add_book", element: <AdminContent /> },
       { path: "/admin/edit/:id", element: <AdminContent /> },
       { path: "category", element: <Category /> },
+      {path: "users", element: <Users/>}
     ],
   },
 ]);
